@@ -12,9 +12,9 @@ public class Cashier {
         System.out.println("Barang ditambahkan.");
     }
 
-    public void removeItem(String code) {
+   public void removeItem(String code) {
         for (Item item : items) {
-            if (item.getCode() == code) {
+            if (item.getCode().equals(code)) {
                 items.remove(item);
                 System.out.println("Barang dihapus.");
                 return;
